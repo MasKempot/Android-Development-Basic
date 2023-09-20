@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarScrollViewActivity">
+
+    <ImageView
+        android:id="@+id/ivBg"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="250dp"
+        android:src="@drawable/img_10">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/Bg2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/img_8" />
+
+    <TextView
+        android:id="@+id/JudulFilm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/Bg2"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="SUSUK SI MANIS"
+        android:textColor="#CA0E00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/Aktor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horor"
+        android:textColor="#FF9800"
+        android:textSize="10sp"
+        android:layout_toRightOf="@+id/Bg2"
+        android:layout_marginTop="135dp"
+        android:layout_marginStart="22dp"/>
+    <ImageView
+        android:id="@+id/Rating1"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:src="@drawable/baseline_star_24"
+        android:layout_toRightOf="@+id/Aktor"
+        android:layout_marginTop="137dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:id="@+id/Nilai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5.0"
+        android:textColor="#FF9800"
+        android:textSize="10sp"
+        android:layout_toRightOf="@+id/Bg2"
+        android:layout_marginTop="135dp"
+        android:layout_marginStart="80dp"/>
+    <TextView
+        android:id="@+id/Viewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="190k View"
+        android:textColor="#FF9800"
+        android:textSize="10sp"
+        android:layout_toRightOf="@+id/Bg2"
+        android:layout_marginTop="136dp"
+        android:layout_marginStart="110dp"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="25dp"
+        app:cardBackgroundColor="#DDDADA"
+        android:layout_below="@+id/ivBg"
+        android:layout_marginTop="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/Navbar1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Self-Development"
+                android:textSize="11sp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#DDDADA"
+        android:layout_below="@+id/ivBg"
+        android:layout_marginTop="15dp"
+        tools:ignore="NotSibling">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/Navbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-Fiction"
+                android:textSize="11sp"
+                android:layout_centerHorizontal="true"
+                >
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="279dp"
+        app:cardBackgroundColor="#DDDADA"
+        android:layout_below="@+id/ivBg"
+        android:layout_marginTop="15dp"
+        tools:ignore="NotSibling">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Navbar3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:text="Spritual Region"
+                android:textSize="11sp">
+
+            </TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+<ScrollView
+    android:id="@+id/Ceritanya"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_below="@id/Sinopsis">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/susuk">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+    <TextView
+            android:id="@+id/Sinopsis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Synopsis"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_below="@id/JudulFilm"
+            android:layout_marginTop="170dp"
+            android:layout_marginStart="25dp"/>
+
+
+    <Button
+        android:id="@+id/ButtonOlivia"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Review"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/black"
+        android:text="Read">
+
+    </Button>
+    <ScrollView
+        android:id="@+id/Review"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@id/Ceritanya">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/Sinopsis2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        android:layout_below="@id/Ceritanya"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="25dp"
+        tools:ignore="NotSibling" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="110dp"
+        android:layout_below="@+id/Sinopsis2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="27dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#FAF8F8">
+
+        <TextView
+            android:id="@+id/JudulKotak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="18dp"
+            android:text="Alexander Olivia"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/TeksOlivia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50sp"
+            android:text="Film Ini sangat bagus nyet.">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="50dp"
+        android:layout_marginStart="45dp"
+        android:layout_below="@+id/Sinopsis2"
+        android:layout_marginTop="40dp"
+        tools:ignore="NotSibling">
+
+        <ImageView
+            android:id="@+id/GambarPP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_9">
+        </ImageView>
+
+
+    </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

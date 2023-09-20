@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/DoaZikir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/kotakzikir"
+        >
+        <ImageView
+            android:id="@+id/ivDoa"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/img_30"
+            />
+        <TextView
+            android:id="@+id/tvDoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do'a dan Zikir App"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginTop="120dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvJudulKonten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginTop="380dp"
+        android:text="Pilihan Doa Doa Umum"
+        android:textColor="#6A6A6A"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/TombolDoa"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Selengkapnya"
+        android:backgroundTint="#AEAEAE"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="380dp"
+        >
+    </Button>
+    <ImageView
+        android:id="@+id/ivSelengkapnya"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:src="@drawable/baseline_keyboard_arrow_right_24"
+        android:layout_marginTop="382dp"
+        android:layout_marginStart="380dp">
+
+    </ImageView>
+    <ScrollView
+        android:id="@+id/svDoa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvJudulKonten"
+        android:layout_marginTop="41dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="22dp" />
+    </ScrollView>
+
+</RelativeLayout>

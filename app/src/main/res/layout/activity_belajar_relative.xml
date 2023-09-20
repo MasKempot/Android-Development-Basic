@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BelajarRelativeActivity"
+    >
+
+    <TextView
+        android:id="@+id/KiriAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Atas"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/KananAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Atas"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="	#8B0000"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/TengahAtas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="	#8B0000"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/KiriTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_centerInParent="true"
+        android:layout_alignParentStart="true"
+        />
+    <TextView
+        android:id="@+id/TengahTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/KananTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/KiriBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiri Bawah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:id="@+id/TengahBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tengah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/KananBawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kanan Bawah"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        />
+    <TextView
+        android:id="@+id/diatasTengah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giani Cantik"
+        android:textAllCaps="true"
+        android:textSize="17sp"
+        android:textColor="#8B0000"
+        android:layout_above="@+id/TengahTengah"
+        />
+
+
+
+</RelativeLayout>

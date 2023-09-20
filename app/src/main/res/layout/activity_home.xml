@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/img_2"
+    tools:context=".HomeActivity">
+
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="Giani Cute!"
+       android:fontFamily="@font/poppins_semibold"
+       android:gravity="center"
+       android:textSize="27sp"
+       android:textColor="#8B0000"
+       android:layout_marginBottom="200dp"
+       />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="360dp"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="8dp"
+            android:backgroundTint="#BDB76B"
+            android:text="I Love U"
+            app:icon="@drawable/baseline_share_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPindah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#B8860B"
+            android:layout_margin="8dp"
+            android:text="Gia Cantik"
+            app:icon="@drawable/baseline_keyboard_arrow_right_24" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoaHarianActivity">
+
+<!--    header-->
+    <RelativeLayout
+        android:id="@+id/Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_test">
+
+        <TextView
+            android:id="@+id/tvJudul"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/doa_harian"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="30dp"
+            android:textStyle="bold"
+            android:maxLines="2">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/ivJudul"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_toRightOf="@+id/tvJudul"
+            android:src="@drawable/adi"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+        />
+    </RelativeLayout>
+        <ScrollView
+            android:id="@+id/svJudulDoa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_below="@+id/Header">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvDoaHarian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+</RelativeLayout>
